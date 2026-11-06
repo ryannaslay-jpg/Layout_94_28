@@ -179,7 +179,7 @@ i{
 
 
 table, th, td{
-    border:1px solid #93c5fd;
+    border:1px solid #5ea6f9;
     padding: 5px;
 }
 
@@ -189,7 +189,7 @@ td.hover {
 }
 
 td.hover:hover{
-    background-color: #3a5eaa;
+    background-color: #aa85d0;
     color: white;
 } 
 
@@ -210,7 +210,7 @@ th{
 }
 
 th.warna{
-    background-color: #a87cf9;
+    background-color: #ecff5a;
     color: rgb(205, 113, 255);
 }
 
