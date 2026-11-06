@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LAYOUT HTML dan CSS</title>
+        <link rel="Stylesheet" href="index.css">
+        <link rel="stylesheet" href="biodatastyle.css">
+        <link rel="stylesheet" href="STS_TIK_94_28.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>HEADER</h1>
+        </div>
+        <div class="topnav">
+            <a href="index.html">Biodata</a>
+            <a href="table.html">Table</a>
+            <a href="list.html">List</a>
+            <a href="sts.html">STS</a>
+        </div>
+
+    <div class="container">
+        <!-- Judul Utama -->
+        <h1 class="main-title">Think Before You Post: Gunakan Media Sosial dengan Bijak</h1>
+        <h3 class="author-title">Dibuat oleh : Ryanna / 94 / 28</h3>
+
+
+        <!-- Wrapper Paragraf + Stiker Samping Kiri & Kanan -->
+        <div class="paragraph-section">
+       
+
+
+            <!-- Box Paragraf Utama (1 Kolom Penuh) -->
+            <div class="content-box">
+                <div class="image-gallery">
+                    <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=500" alt="Medsos 1" class="hover-img">
+                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=500" alt="Medsos 2" class="hover-img">
+                </div>
+
+
+                <p class="indent-para">
+                    Zaman sekarang, siapa sih yang nggak punya media sosial? Mulai dari bangun tidur sampai mau tidur lagi, kita hampir selalu ngecek HP buat liat update di Instagram, nonton video TikTok, dengerin lagu di Spotify, atau sekadar kirim pesan di WhatsApp. Media sosial emang bikin hidup kita jadi seru dan serba praktis. Kita bisa dengan mudah terhubung sama teman-teman, nemuin hal-hal baru yang keren, sampai dapet hiburan tanpa batas. Tapi di balik semua keseruan itu, kita juga harus sadar kalau dunia maya punya aturan dan risiko yang harus kita perhatikan baik-baik.
+                </p>
+
+
+                <p class="indent-para">
+                    Salah satu hal paling penting saat main medsos adalah menjaga etika dan cara kita berkomunikasi. Kadang karena merasa nggak tatap muka langsung, orang jadi gampang banget ngetik komentar pedas, nyebarin gosip, atau bahkan melakukan cyberbullying. Padahal, apa yang kita ketik dan unggah di internet bakal ninggalin jejak digital yang susah banget dihilangin. Jejak digital ini bisa saja berdampak ke masa depan kita, misalnya saat mau masuk sekolah tinggi atau cari kerja nanti. Jadi, sebelum kita unggah postingan atau ketik komentar, coba deh pikirin dulu: apakah kalimat ini sopan dan nggak menyakiti perasaan orang lain?
+                </p>
+
+
+                <p class="indent-para">
+                    Selain etika, masalah keamanan data pribadi juga nggak boleh dianggap sepele. Sekarang ini banyak banget kasus penipuan atau peretasan akun yang berawal dari kebiasaan pengguna yang suka asal bagikan informasi pribadi. Jangan pernah upload foto identitas, nomor telepon pribadi, alamat rumah lengkap, atau lokasi langsung saat kamu lagi di luar rumah. Jangan lupa juga buat selalu mengaktifkan fitur keamanan seperti verifikasi dua langkah (2FA) di semua akun medsos kamu biar nggak gampang dibobol sama orang jahat.
+                </p>
+
+
+                <p class="indent-para">
+                    Terakhir, kita harus pintar saring informasi sebelum membagikannya. Berita bohong atau hoaks sering banget tersebar cepat cuma karena orang-orang langsung klik tombol share tanpa cek kebenarannya dulu. Kalau dapet kabar yang bikin panik atau heboh, coba cek dulu sumbernya di situs berita resmi. Jangan sampai kita ikut-ikutan jadi penyebar berita hoax yang merugikan orang banyak. Mari kita pakai media sosial buat hal-hal yang bermanfaat, saling menginspirasi, dan menyebarkan energi positif setiap hari!
+                </p>
+            </div>
+
+
+        </div>
+
+
+        <!-- GAMBAR MYSTERY MACHINE DI TENGAH -->
+        <div class="van-divider">
+            <img src="mystery.png" alt="The Mystery Machine" class="mystery-van">
+        </div>
+
+
+        <!-- Section Tombol Aplikasi di Bawah -->
+        <div class="apps-section-box">
+            <h2 class="section-heading">Klik Aplikasi Untuk Tips & Contoh Penggunaannya!</h2>
+           
+            <div class="apps-container">
+                <div class="app-card" onclick="openApp('spotify')">
+                    <img src="velma.png" alt="Velma" class="char-img">
+                    <img src="spotify 2.jpg" alt="Spotify Icon" class="app-icon">
+                </div>
+
+
+                <div class="app-card" onclick="openApp('whatsapp')">
+                    <img src="scooby wiht eyes.png" alt="Scooby" class="char-img">
+                    <img src="whatsapp.png" alt="WhatsApp Icon" class="app-icon">
+                </div>
+
+
+                <div class="app-card" onclick="openApp('tiktok')">
+                    <img src="shaggy.png" alt="Shaggy" class="char-img">
+                    <img src="tiktok 2.png" alt="TikTok Icon" class="app-icon">
+                </div>
+
+
+                <div class="app-card" onclick="openApp('youtube')">
+                    <img src="fred.png" alt="Fred" class="char-img">
+                    <img src="youtube 2.png" alt="YouTube Icon" class="app-icon">
+                </div>
+
+
+                <div class="app-card" onclick="openApp('pinterest')">
+                    <img src="daphne.png" alt="Daphne" class="char-img">
+                    <img src="pinterest.jpg" alt="Pinterest Icon" class="app-icon">
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- POPUP MODAL TEMA APP -->
+
+
+    <!-- 1. Spotify -->
+    <div id="modal-spotify" class="modal">
+        <div class="spotify-window">
+            <button class="close-btn" onclick="closeApp('spotify')">✖</button>
+            <div class="spotify-header">
+                <h2>Spotify - Wise Listener</h2>
+            </div>
+            <div class="spotify-grid">
+                <div class="spotify-card">
+                    <div class="spot-img">🎙️</div>
+                    <h4>Dengarkan Podcast Edukasi</h4>
+                    <p>Manfaatkan Spotify buat dengerin podcast sains, belajar bahasa, atau pengembangan diri.</p>
+                </div>
+                <div class="spotify-card">
+                    <div class="spot-img">🎧</div>
+                    <h4>Hargai Karya Musik</h4>
+                    <p>Selalu dengarkan musik dari platform resmi dan jangan membajak karya musisi favoritmu.</p>
+                </div>
+                <div class="spotify-card">
+                    <div class="spot-img">⏱️</div>
+                    <h4>Atur Waktu Dengar</h4>
+                    <p>Gunakan fitur sleep timer agar tidak tertidur sambil mendengarkan musik menggunakan earphone.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 2. WhatsApp -->
+    <div id="modal-whatsapp" class="modal">
+        <div class="wa-window">
+            <div class="wa-header">
+                <button class="close-btn-wa" onclick="closeApp('whatsapp')">✖</button>
+                <h3> WA: Edukasi Pesan Bijak</h3>
+            </div>
+            <div class="wa-body">
+                <div class="chat-bubble left">
+                    <p><strong>Teman:</strong> Eh, dapet info diskon dan hadiah dari link ini nih, langsung sebarin ke grup yuk!</p>
+                </div>
+                <div class="chat-bubble right">
+                    <p><strong>Kamu:</strong> Eits, tahan dulu! Cek link-nya baik-baik, jangan langsung percaya. Saring sebelum sharing biar terhindar dari phishing/hoaks! 🛑</p>
+                </div>
+                <div class="chat-bubble left">
+                    <p><strong>Teman:</strong> Waah untung kamu ingetin! Makasih yaa info etikanya.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 3. TikTok -->
+    <div id="modal-tiktok" class="modal">
+        <div class="generic-window tiktok-theme">
+            <button class="close-btn" onclick="closeApp('tiktok')">✖</button>
+            <h2>TikTok - Tips Penggunaan</h2>
+            <ul>
+                <li><b>Konten Positif:</b> Buat video kreatif, edukatif, dan hindari tren atau challenge yang membahayakan diri.</li>
+                <li><b>Komentar Sopan:</b> Selalu gunakan bahasa yang baik dan hindari melakukan cyberbullying pada kreator lain.</li>
+                <li><b>Atur Screen Time:</b> Batasi waktu scrolling harian agar tidak lupa waktu belajar.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 4. YouTube -->
+    <div id="modal-youtube" class="modal">
+        <div class="generic-window yt-theme">
+            <button class="close-btn" onclick="closeApp('youtube')">✖</button>
+            <h2>YouTube - Positive Viewer</h2>
+            <ul>
+                <li><b>Tonton Video Bermanfaat:</b> Utamakan menonton tutorial, pembelajaran TIK, dan konten edukatif.</li>
+                <li><b>Kritik Membangun:</b> Berikan apresiasi atau masukkan yang positif di kolom komentar.</li>
+                <li><b>Hormati Hak Cipta:</b> Jangan mengunggah ulang (re-upload) video orang lain tanpa izin resmi.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- 5. Pinterest -->
+    <div id="modal-pinterest" class="modal">
+        <div class="generic-window pin-theme">
+            <button class="close-btn" onclick="closeApp('pinterest')">✖</button>
+            <h2>Pinterest - Creative Pins</h2>
+            <ul>
+                <li><b>Cari Inspirasi:</b> Gunakan Pinterest untuk mengumpulkan ide desain, proyek sekolah, atau seni.</li>
+                <li><b>Berikan Kredit:</b> Saat menyimpan atau membagikan ulang gambar, pastikan mencantumkan pembuat aslinya.</li>
+                <li><b>Unggah Karya Sendiri:</b> Bagikan hasil karya visualmu secara bijak untuk menginspirasi orang lain.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script>
+        function openApp(appName) {
+            document.getElementById('modal-' + appName).style.display = 'flex';
+        }
+        function closeApp(appName) {
+            document.getElementById('modal-' + appName).style.display = 'none';
+        }
+    </script>
+
+
+
+
+
+
+        
+        <div class="footer">
+            <p>Nama- Kelas - No. absen</p>
+
+        </div>
+    </body>
+</html>

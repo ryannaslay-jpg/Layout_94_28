@@ -1,0 +1,390 @@
+body{
+    background-image: url(download\ \(25\).jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h2{
+    background-color: aqua;
+    color: rgb(50, 42, 165);
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color: hotpink;
+}
+
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color: mediumpurple;
+    color: black;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid cornflowerblue;
+}
+
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale (1.1);
+}
+
+.foto img.bottom{
+    opacity: 0; 
+    z-index: 1;
+}
+
+.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+h2.Favorit{
+     background-color: aqua;
+    color: rgb(50, 42, 165);
+    text-align: center;
+}
+
+div.artis{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+   text-align: center;
+}
+img{padding: 10px;}
+
+div.artis1{
+    width: 190px;
+    height: 227px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: bisque;
+}
+div.artis1:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.artist2{
+    width: 190px;
+    height: 210px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: bisque;
+}
+div.artist2:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.artist3{
+    width: 190px;
+    height: 210px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: bisque;
+}
+div.artist3:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.artist4{
+    width: 190px;
+    height: 210px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: bisque;
+}
+div.artist4:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.artist5{
+    width: 190px;
+    height: 210px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: bisque;
+}
+div.artist5:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.artist6{
+    width: 190px;
+    height: 210px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 25px;
+    background-color: bisque;
+}
+div.artist6:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+
+/* =========================
+   MAKANAN FAVORIT TEMAN
+   ========================= */
+
+div.makanan-teman{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+
+/* KARTU MAKANAN */
+
+div.telur-asin,
+div.pizza,
+div.carbonara,
+div.salmon-sashimi,
+div.ice-cream{
+    width: 240px;
+    height: 270px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background-color: #F6C7A7;
+    box-shadow: 0 4px 8px black;
+    flex-shrink: 0;
+    transition: 0.5s ease;
+}
+
+
+/* GAMBAR */
+
+div.telur-asin img,
+div.pizza img,
+div.carbonara img,
+div.salmon-sashimi img,
+div.ice-cream img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+div.food-info{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 18px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+
+
+/* JUDUL MAKANAN */
+
+div.food-info h3{
+    margin: 0 0 8px 0;
+    font-size: 19px;
+}
+
+
+/* DESKRIPSI */
+
+div.food-info p{
+    margin: 0;
+    font-size: 14px;
+}
+
+
+/* HOVER KARTU */
+
+div.telur-asin:hover,
+div.pizza:hover,
+div.carbonara:hover,
+div.salmon-sashimi:hover,
+div.ice-cream:hover{
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 12px 25px black;
+}
+iv.telur-asin:hover img,
+div.pizza:hover img,
+div.carbonara:hover img,
+div.salmon-sashimi:hover img,
+div.ice-cream:hover img{
+    transform: scale(1.1);
+    filter: brightness(0.6);
+}
+
+
+/* INFO MUNCUL */
+
+div.telur-asin:hover .food-info,
+div.pizza:hover .food-info,
+div.carbonara:hover .food-info,
+div.salmon-sashimi:hover .food-info,
+div.ice-cream:hover .food-info{
+    transform: translateY(0);
+}
+
+/* GAMBAR MEMBESAR */
+
+.song audio {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    margin-right: -10px;
+    height: 40px;
+}
+.songpic{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    column-gap: 100px;
+    row-gap: 25px;
+    justify-content: center;
+    width: 95px;
+    margin: 30px auto;
+}
+.song img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.song p{
+    color: aliceblue;
+}
+.song {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    border-radius: 20px;
+    transition: transform 0.3 ease;
+
+}
+.song:hover{
+    transform: scale(1.05);
+}
+
+.song .vinyl {
+    position: absolute;
+    width: 190px !important;
+    height: 190px !important;
+    aspect-ratio: 1 / 1 !important;
+    object-fit: cover;
+    border-radius: 50% !important;
+
+
+    top: 100px;
+    left: -110px;
+    opacity: 0;
+    z-index: -1;
+
+
+    transform: translate(170px, -50%);
+    transform-origin: center;
+}
+
+
+.song:hover .vinyl {
+    opacity: 1;
+    animation:
+        slideIn 0.5s ease-out forwards,
+        spin 2.5s linear 0.5s infinite;
+}
+
+
+.song:not(:hover) .vinyl {
+    animation: slideBack 0.5s ease-in forwards;
+}
+
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translate(140px, -50%);
+    }
+
+
+    to {
+        opacity: 1;
+        transform: translate(20px, -50%);
+    }
+}
+
+
+@keyframes slideBack {
+    from {
+        opacity: 1;
+        transform: translate(20px, -50%);
+    }
+
+
+    to {
+        opacity: 0;
+        transform: translate(140px, -50%);
+    }
+}
+
+
+@keyframes spin {
+    from {
+        transform: translate(20px, -50%) rotate(0deg);
+    }
+
+
+    to {
+        transform: translate(20px, -50%) rotate(360deg);
+    }
+}
+
